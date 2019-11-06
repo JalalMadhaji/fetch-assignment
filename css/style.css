@@ -36,6 +36,12 @@ fieldset {
     padding: 10px;
     border-radius: 5px;
 }
+legend {
+    padding: 6px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
 button {
     display: inline-block;
     margin: 10px auto;
