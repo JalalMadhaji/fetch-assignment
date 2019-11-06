@@ -94,7 +94,7 @@ function editRow(e) {
         .then(res => res.json())
         .then(data => {
             // handle success
-            model.innerHTML = "New Post Was Added Successfully...";
+            model.innerHTML = "New Post Was Updated Successfully...";
             model.classList.add("success");
             setTimeout(function() {
                 model.classList.remove("success");
