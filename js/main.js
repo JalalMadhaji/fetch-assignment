@@ -79,35 +79,40 @@ function editRow(e) {
     let body = document.getElementById("body-edit").value;
     let userId = document.getElementById("userId-edit").value;
     let model = document.getElementById("model2");
-
-    fetch(`https://jsonplaceholder.typicode.com/posts/${ID}`, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            title: title,
-            body: body,
-            userId: userId
-        })
-    })
-        .then(res => res.json())
-        .then(data => {
-            // handle success
-            model.innerHTML = "New Post Was Updated Successfully...";
-            model.classList.add("success");
-            setTimeout(function() {
-                model.classList.remove("success");
-            }, 5000);
-            console.log(data);
-        })
-        .catch(err => {
-            // handle err
-            model.innerHTML = "Something Went Wronge...";
-            model.classList.add("error");
-            setTimeout(function() {
-                model.classList.remove("error");
-            }, 5000);
-            console.log(err);
-        });
+    ID !== ""
+        ? fetch(`https://jsonplaceholder.typicode.com/posts/${ID}`, {
+              method: "PUT",
+              headers: {
+                  "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                  title: title,
+                  body: body,
+                  userId: userId
+              })
+          })
+              .then(res => res.json())
+              .then(data => {
+                  // handle success
+                  model.innerHTML = "New Post Was Updated Successfully...";
+                  model.classList.add("success");
+                  setTimeout(function() {
+                      model.classList.remove("success");
+                  }, 5000);
+                  console.log(data);
+              })
+              .catch(err => {
+                  // handle err
+                  model.innerHTML = "Something Went Wronge...";
+                  model.classList.add("error");
+                  setTimeout(function() {
+                      model.classList.remove("error");
+                  }, 5000);
+                  console.log(err);
+              })
+        : (model.innerHTML = "Fill The ID field");
+    model.classList.add("error");
+    setTimeout(function() {
+        model.classList.remove("error");
+    }, 5000);
 }
