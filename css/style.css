@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+body {
+    background: repeating-linear-gradient(
+        45deg,
+        #ddd 0px,
+        #ddd 40px,
+        #eee 40px,
+        #eee 80px
+    );
+    min-height: 100vh;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    min-height: 100vh;
+    background: white;
+    box-shadow: 0 0 5px #aaa;
+}
+h2 {
+    margin: 50px auto 0;
+}
+section {
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+fieldset {
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 7px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: rgb(255, 60, 0);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover {
+    box-shadow: 0 10px 10px rgb(204, 204, 204);
+    transform: translateY(-3px);
+}
+input {
+    height: 40px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    margin: 10px auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+}
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 0;
+}
+.model {
+    display: none;
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.success {
+    display: block;
+    background: rgba(0, 128, 0, 0.507);
+}
+.error {
+    display: block;
+    background: rgba(255, 4, 4, 0.507);
+}

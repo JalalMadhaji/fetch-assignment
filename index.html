@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <section>
+                    <h2>Get Posts</h2>
+                    <div class="get-posts">
+                        <button id="ref">Refresh</button>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Body</th>
+                                    <th>UserID</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody"></tbody>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <h2>Add Post</h2>
+                    <div class="add-posts">
+                        <fieldset>
+                            <legend>New Post</legend>
+                            <form id="addForm">
+                                <input
+                                    type="text"
+                                    id="title-add"
+                                    placeholder="Title"
+                                />
+                                <input
+                                    type="text"
+                                    id="body-add"
+                                    placeholder="Body"
+                                />
+                                <input
+                                    type="number"
+                                    id="userId-add"
+                                    placeholder="User Id"
+                                />
+                                <button>ADD</button>
+                                <div id="model" class="model"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+                <section>
+                    <h2>Update Post</h2>
+                    <div class="edit-posts">
+                        <fieldset>
+                            <legend>Edit Post</legend>
+                            <form id="editForm">
+                                <input type="number" id="ID" placeholder="ID" />
+                                <input
+                                    type="text"
+                                    id="title-edit"
+                                    placeholder="Title"
+                                />
+                                <input
+                                    type="text"
+                                    id="body-edit"
+                                    placeholder="Body"
+                                />
+                                <input
+                                    type="number"
+                                    id="userId-edit"
+                                    placeholder="User Id"
+                                />
+                                <button>Edit</button>
+                                <div id="model2" class="model"></div>
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
