@@ -26,19 +26,21 @@ body {
 }
 h2 {
     margin: 50px auto 0;
-}
-section {
-    border-bottom: 1px solid black;
-    padding-bottom: 40px;
+    padding: 10px;
+    box-shadow: 0 0 2px #000;
+    background: rgb(64, 73, 62);
+    color: white;
 }
 fieldset {
     margin: 20px auto;
     padding: 10px;
     border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px #000;
 }
 legend {
     padding: 6px 20px;
-    background: black;
+    background: rgb(64, 73, 62);
     color: white;
     border-radius: 5px;
 }
@@ -49,11 +51,12 @@ button {
     border-radius: 5px;
     border: none;
     color: white;
-    background: rgb(255, 60, 0);
+    background: rgb(14, 165, 0);
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
+    box-shadow: 0 0 2px #888;
 }
 button:hover {
     box-shadow: 0 10px 10px rgb(204, 204, 204);
@@ -67,15 +70,18 @@ input {
     padding: 0 10px;
     margin: 10px auto;
 }
+.left {
+    text-align: end;
+}
 table {
     border-collapse: collapse;
     width: 100%;
-    margin: 20px auto;
+    margin: 5px auto 20px;
 }
 th,
 td {
     border: 1px solid black;
-    padding: 10px 0;
+    padding: 10px 5px;
 }
 .model {
     display: none;
